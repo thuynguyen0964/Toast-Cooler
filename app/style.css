@@ -52,13 +52,13 @@ body{
     cursor: pointer;
 }
 
-.success .icon{
+.Success .icon{
     color:#86d410 ;
 }
-.error .icon{
+.Error .icon{
     color: #a03333;
 }
-.infor .icon{
+.Infor .icon{
     color: blueviolet;
 }
 
@@ -75,14 +75,17 @@ body{
 .btn:active{
     transform: scale(0.8);
 }
-.btn#success{
+.btn#Success{
     background-color: #86d410;
 }
-.btn#error{
+.btn#Error{
     background-color: #a03333;
 }
-.btn#infor{
+.btn#Infor{
     background-color: blueviolet;
+}
+.btn#Warning{
+    background-color: coral;
 }
 @keyframes fadeout {
     0%{

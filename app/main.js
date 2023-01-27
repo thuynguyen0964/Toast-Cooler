@@ -1,21 +1,26 @@
 let container = document.querySelector(".container");
 let btns = document.querySelectorAll(".btn");
 let toastDetails = {
-  time: 3000,
-  success: {
+  time: 4000,
+  Success: {
     icon: "fa-solid fa-circle-check",
-    title: "success",
+    title: "Success",
     text: "This is a success toast!!!",
   },
-  error: {
+  Error: {
     icon: "fa-solid fa-triangle-exclamation",
-    title: "error",
+    title: "Error",
     text: "This is a error toast!!!",
   },
-  infor: {
+  Infor: {
     icon: "fa-solid fa-circle-info",
-    title: "infor",
+    title: "Infor",
     text: "This is a infor toast!!!",
+  },
+  Warning: {
+    icon: "fa-solid fa-circle-radiation",
+    title: "Waring",
+    text: "This is a warning toast!!!",
   },
 };
 let removeToast = (toast) => {
