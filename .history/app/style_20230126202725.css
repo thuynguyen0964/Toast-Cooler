@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.toast{
+    width: 350x;
+    list-style: none;
+    border-left: 5px solid #9de031;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e1ebe6eb;
+    margin: 10px 0;
+}
+.toast__text{
+    padding: 0 12px;
+}
+.toast__desc,
+.toast__title{
+    margin: 8px 0;
+}
+.icon__close,
+.icon{
+    padding:0 10px;
+    font-size: 20px;
+}

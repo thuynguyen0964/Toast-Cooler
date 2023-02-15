@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.container{
+    position: fixed;
+    top: 30px;
+    right: 20px;
+}
+.toast{
+    width: 350x;
+    list-style: none;
+    border-left: 5px solid #9de031;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e1ebe671;
+    margin: 10px 0;
+    animation: sliderin 0.5s ease forwards;
+}
+
+@keyframes sliderin {
+    0%{
+        transform: ;
+    }
+}
+.toast__text{
+    padding: 0 12px;
+}
+.toast__desc,
+.toast__title{
+    margin: 8px 0;
+}
+.icon__close,
+.icon{
+    padding:0 10px;
+    font-size: 24px;
+}
+.icon__close{
+    cursor: pointer;
+}
+
+.success .icon{
+    color:#86d410 ;
+}
+.error .icon{
+    color: #a03333;
+}
+.infor .icon{
+    color: blueviolet;
+}
+
+.btn{
+    font-size: 16px;
+    color: azure;
+    border: unset;
+    outline: none;
+    padding: 12px 18px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn:active{
+    transform: scale(0.8);
+}
+.btn#success{
+    background-color: #86d410;
+}
+.btn#error{
+    background-color: #a03333;
+}
+.btn#infor{
+    background-color: blueviolet;
+}

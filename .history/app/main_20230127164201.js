@@ -1,7 +1,7 @@
 let container = document.querySelector(".container");
 let btns = document.querySelectorAll(".btn");
 let toastDetails = {
-  time: 6000,
+  time: 4000,
   Success: {
     icon: "fa-solid fa-circle-check",
     title: "Success",
@@ -28,8 +28,8 @@ let removeToast = (toast) => {
   toast.classList.add("hidden");
   setTimeout(() => {
     toast.remove();
-  }, 1000);
-  //xoa toast khỏi DOM sau 1s
+  }, 500);
+  //xoa toast khỏi DOM sau 0.5s
 };
 
 let createToast = function (id) {

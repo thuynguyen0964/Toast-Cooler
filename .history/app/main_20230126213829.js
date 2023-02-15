@@ -1,35 +1,30 @@
 let container = document.querySelector(".container");
 let btns = document.querySelectorAll(".btn");
 let toastDetails = {
-  time: 6000,
-  Success: {
+  time: 3000,
+  success: {
     icon: "fa-solid fa-circle-check",
-    title: "Success",
+    title: "success",
     text: "This is a success toast!!!",
   },
-  Error: {
+  error: {
     icon: "fa-solid fa-triangle-exclamation",
-    title: "Error",
+    title: "error",
     text: "This is a error toast!!!",
   },
-  Infor: {
+  infor: {
     icon: "fa-solid fa-circle-info",
-    title: "Infor",
+    title: "infor",
     text: "This is a infor toast!!!",
-  },
-  Warning: {
-    icon: "fa-solid fa-circle-radiation",
-    title: "Waring",
-    text: "This is a warning toast!!!",
   },
 };
 let removeToast = (toast) => {
-    if(toast.timeId){clearTimeout(toast.timeId)};
+    if(toast.timeId){clearTimeout(toast.toastId)};
   toast.classList.add("hidden");
   setTimeout(() => {
     toast.remove();
-  }, 1000);
-  //xoa toast khỏi DOM sau 1s
+  }, 500);
+  //xoa toast khỏi DOM sau 0.5s
 };
 
 let createToast = function (id) {
